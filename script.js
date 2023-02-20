@@ -22,9 +22,9 @@ function verciamKg() {
   let kgToG = document.getElementById("search").value / 0.001;
   let kgToOz = document.getElementById("search").value * 35.274;
 
-  lbBox.textContent = "Weight in pounds = " + kgToLb + "lb";
-  gBox.textContent = "Weight in grams = " + kgToG + "g";
-  ozBox.textContent = "Weight in ounces = " + kgToOz + "oz";
+  lbBox.textContent = "Weight in pounds = " + Math.round(kgToLb) + " lb";
+  gBox.textContent = "Weight in grams = " + kgToG + " g";
+  ozBox.textContent = "Weight in ounces = " + Math.round(kgToOz) + " oz";
 }
 
 document.querySelector("#submit-btn").addEventListener("click", (event) => {
